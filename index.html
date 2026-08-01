@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio Lucky Consultant: pendampingan akademik, presentasi, olah data, revisi, dan sistem tracking order.">
+  <meta name="theme-color" content="#17100d">
+  <meta property="og:title" content="Lucky Consultant — Portfolio">
+  <meta property="og:description" content="Lihat portfolio, ulasan, layanan, dan cek progres pesanan Lucky Consultant.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Lucky Consultant — Portfolio</title>
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Lucky Consultant">
+        <span class="brand-mark">LC</span>
+        <span class="brand-copy"><strong data-brand-name>Lucky Consultant</strong><small>Portfolio</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Layanan</a>
+        <a href="#testimonials">Testimoni</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" data-track-link href="#">Cek Pesanan</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-eyebrow></p>
+          <h1 data-headline></h1>
+          <p class="hero-description" data-description></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#portfolio">Lihat Portfolio</a>
+            <a class="button button-ghost" data-track-link href="#">Cek Progres Order</a>
+          </div>
+          <div class="hero-trust">
+            <span><i class="check">✓</i> Progres transparan</span>
+            <span><i class="check">✓</i> Data disamarkan</span>
+            <span><i class="check">✓</i> Mobile friendly</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="browser-card">
+            <div class="browser-top"><i></i><i></i><i></i><span>luckyconsultant.github.io</span></div>
+            <div class="browser-body">
+              <div class="mini-profile"><span class="mini-logo">LC</span><div><b>Lucky Consultant</b><small>Portfolio & Order Tracking</small></div></div>
+              <div class="mini-stats"><div><b>Portfolio</b><small>Terpilih</small></div><div><b>Review</b><small>Terverifikasi</small></div><div><b>Tracking</b><small>Order ID + PIN</small></div></div>
+              <div class="mini-project"><span></span><div><b>Project terbaru</b><small>Dashboard tracking client</small></div><i>↗</i></div>
+              <div class="mini-project"><span></span><div><b>Desain promosi</b><small>Price list TikTok</small></div><i>↗</i></div>
+              <div class="mini-cta">Lihat Semua Portfolio</div>
+            </div>
+          </div>
+          <div class="floating-badge badge-review"><b>★★★★★</b><span>Area testimoni</span></div>
+          <div class="floating-badge badge-track"><b>Order ID</b><span>Tracking terintegrasi</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Statistik Lucky Consultant">
+      <div class="container stats-grid" id="statsGrid"></div>
+    </section>
+
+    <section class="section-pad" id="portfolio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">HASIL & SISTEM</p><h2>Portfolio terpilih</h2></div>
+          <p>Gunakan bagian ini untuk menunjukkan kualitas pengerjaan tanpa membuka identitas atau dokumen rahasia client.</p>
+        </div>
+        <div class="filter-row reveal" id="portfolioFilters"></div>
+        <div class="portfolio-grid" id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <section class="section-pad section-dark" id="services">
+      <div class="container">
+        <div class="section-heading light reveal">
+          <div><p class="eyebrow">YANG BISA DIBANTU</p><h2>Layanan utama</h2></div>
+          <p>Setiap pesanan dapat disesuaikan dengan tingkat kesulitan, jumlah halaman, deadline, dan kebutuhan revisi.</p>
+        </div>
+        <div class="services-grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="testimonials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">SOCIAL PROOF</p><h2>Apa kata client?</h2></div>
+          <p>Masukkan review asli yang sudah mendapat izin atau samarkan identitasnya menggunakan inisial.</p>
+        </div>
+        <div class="testimonials-grid" id="testimonialsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section-pad tracking-showcase">
+      <div class="container tracking-grid">
+        <div class="tracking-copy reveal">
+          <p class="eyebrow">ORDER TRACKING</p>
+          <h2>Nggak perlu tanya progres berulang kali.</h2>
+          <p>Client cukup memasukkan Order ID dan PIN untuk melihat status, persentase pengerjaan, deadline, dan update terakhir.</p>
+          <a class="button button-primary" data-track-link href="#">Buka Halaman Tracking</a>
+        </div>
+        <div class="tracking-image reveal reveal-delay">
+          <img src="client-tracker.png" alt="Preview halaman tracking client Lucky Consultant" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad section-dark" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal"><p class="eyebrow">PERTANYAAN UMUM</p><h2>Sebelum konsultasi</h2><p>Bagian ini mengurangi pertanyaan berulang dan membantu calon client memahami alur layanan.</p></div>
+        <div class="faq-list" id="faqList"></div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-card reveal">
+        <div><p class="eyebrow">MULAI KONSULTASI</p><h2>Punya brief atau revisi yang perlu dibantu?</h2><p>Kirim jenis pekerjaan, file, deadline, serta catatan penting untuk mendapatkan estimasi.</p></div>
+        <div class="cta-actions"><a class="button button-primary" id="whatsappCta" href="#">Konsultasi via WhatsApp</a><a class="button button-ghost" data-track-link href="#">Cek Pesanan</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><div class="brand footer-brand"><span class="brand-mark">LC</span><span class="brand-copy"><strong data-brand-name>Lucky Consultant</strong><small>Portfolio</small></span></div><p data-brand-note></p></div>
+      <div class="footer-links"><a href="#portfolio">Portfolio</a><a href="#services">Layanan</a><a href="#testimonials">Testimoni</a><a data-track-link href="#">Tracking</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Lucky Consultant</span><span>Dibuat untuk GitHub Pages</span></div>
+  </footer>
+
+  <a class="mobile-wa" id="mobileWhatsapp" href="#" aria-label="Konsultasi melalui WhatsApp"><span>✦</span> Konsultasi</a>
+
+  <dialog class="portfolio-modal" id="portfolioModal">
+    <button class="modal-close" type="button" aria-label="Tutup">×</button>
+    <img id="modalImage" src="" alt="">
+    <div class="modal-content"><p class="eyebrow" id="modalCategory"></p><h3 id="modalTitle"></h3><p id="modalDescription"></p><div class="tag-row" id="modalTags"></div></div>
+  </dialog>
+
+  <script src="source.js"></script>
+  <script src="loader.js"></script>
+</body>
+</html>

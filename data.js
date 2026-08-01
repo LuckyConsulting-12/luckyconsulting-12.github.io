@@ -13,9 +13,9 @@ window.LUCKY_CONFIG = {
 
   links: {
     tracking: "https://script.google.com/macros/s/AKfycby84kZEyUbOFlY2XhyaZ29VxhhShbnZ619t391xVhE2xZPE6K0OagM7cIFHuKeoOnuNTA/exec",
-    whatsappNumber: "628XXXXXXXXXX",
-    whatsappMessage: "Halo Lucky Consultant, saya ingin konsultasi mengenai layanan yang tersedia.",
-    tiktok: "#",
+    whatsappNumber: "628986950766",
+    whatsappMessage: "Halo min!! info joki dong!.",
+    tiktok: "luckyconsultant.id",
     instagram: "#"
   },
 
@@ -89,21 +89,18 @@ window.LUCKY_CONFIG = {
       name: "Inisial Client",
       role: "Jenis layanan",
       rating: 5,
-      demo: true
     },
     {
       text: "Gunakan ulasan singkat yang menyoroti hasil, kecepatan respons, atau pengalaman revisi.",
       name: "Inisial Client",
       role: "Jenis layanan",
       rating: 5,
-      demo: true
     },
     {
       text: "Jangan tampilkan nomor WhatsApp, nama lengkap, kampus, atau informasi sensitif tanpa izin.",
       name: "Inisial Client",
       role: "Jenis layanan",
       rating: 5,
-      demo: true
     }
   ],
 

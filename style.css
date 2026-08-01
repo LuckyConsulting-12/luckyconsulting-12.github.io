@@ -16,3 +16,53 @@
 @media(max-width:980px){.main-nav{gap:18px}.hero-grid,.tracking-grid{grid-template-columns:1fr}.hero{padding-top:140px}.hero-copy{text-align:center}.hero-description{margin-left:auto;margin-right:auto}.hero-actions,.hero-trust{justify-content:center}.hero-visual{max-width:620px;margin:25px auto 0}.portfolio-grid,.services-grid{grid-template-columns:repeat(2,1fr)}.testimonials-grid{grid-template-columns:1fr}.faq-grid{grid-template-columns:1fr}.cta-card{flex-direction:column;align-items:flex-start}.section-heading{align-items:flex-start;flex-direction:column}.tracking-copy{text-align:center}.tracking-copy .button{margin:auto}}
 @media(max-width:760px){.container{width:min(calc(100% - 28px),var(--max))}.section-pad{padding:78px 0}.site-header{background:rgba(251,246,237,.92)}.nav-wrap{height:68px}.menu-toggle{display:block}.main-nav{position:absolute;top:68px;left:14px;right:14px;display:none;flex-direction:column;align-items:stretch;padding:17px;background:#fffaf2;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.main-nav.open{display:flex}.main-nav a{padding:8px 10px}.nav-cta{text-align:center}.hero{min-height:auto;padding-top:115px}.hero h1{font-size:45px}.hero-description{font-size:16px}.hero-trust{gap:10px 16px}.browser-card{transform:none}.badge-review{left:-4px;top:65px}.badge-track{right:-4px;bottom:35px}.floating-badge{padding:10px 13px}.stats-strip{margin-top:0;background:var(--ink)}.stats-grid{grid-template-columns:repeat(2,1fr);border-radius:0;box-shadow:none}.stat-card:nth-child(2){border-right:0}.stat-card:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.1)}.portfolio-grid,.services-grid{grid-template-columns:1fr}.portfolio-media{height:240px}.section-heading h2,.tracking-copy h2,.faq-intro h2{font-size:40px}.tracking-grid{gap:35px}.cta-section{padding:60px 0}.cta-card{padding:34px 25px}.cta-card h2{font-size:35px}.cta-actions{width:100%}.cta-actions .button{width:100%}.footer-grid{grid-template-columns:1fr}.footer-links{justify-content:start}.footer-bottom{flex-direction:column;gap:6px;padding-bottom:60px}.mobile-wa{position:fixed;display:flex;right:16px;bottom:16px;z-index:90;align-items:center;gap:8px;padding:13px 18px;border-radius:999px;background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#21150f;font-weight:800;font-size:13px;box-shadow:0 16px 35px rgba(78,46,25,.3)}.portfolio-modal>img{max-height:360px}.modal-content{padding:24px}.modal-close{margin-left:calc(100vw - 88px)}}
 @media(max-width:420px){.hero h1{font-size:39px}.hero-actions .button{width:100%}.brand-copy strong{font-size:16px}.badge-review{display:none}.badge-track{right:6px;bottom:20px}.browser-body{padding:23px 18px}.mini-stats{grid-template-columns:1fr}.mini-stats div{flex-direction:row;justify-content:space-between}.stat-card{padding:23px 10px}.stat-number{font-size:29px}}
+
+
+/* Testimoni bergambar — v2 */
+.testimonial-card.has-proof{padding:0;overflow:hidden}
+.testimonial-copy{padding:28px}
+.testimonial-card:not(.has-proof) .testimonial-copy{padding:0}
+.testimonial-proof{
+  position:relative;
+  display:block;
+  height:250px;
+  overflow:hidden;
+  background:#1f1511;
+  border-bottom:1px solid var(--line)
+}
+.testimonial-proof img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  transition:transform .3s ease
+}
+.testimonial-proof:hover img{transform:scale(1.025)}
+.testimonial-proof span{
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:12px;
+  padding:9px 12px;
+  border-radius:999px;
+  background:rgba(23,16,13,.88);
+  color:#fff4d8;
+  font-size:11px;
+  font-weight:800;
+  text-align:center;
+  backdrop-filter:blur(8px)
+}
+.testimonial-empty{
+  grid-column:1/-1;
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  padding:25px;
+  border:1px dashed rgba(56,37,28,.25);
+  border-radius:20px;
+  background:rgba(255,255,255,.48);
+  color:var(--muted)
+}
+.testimonial-empty b{color:var(--ink)}
+@media(max-width:620px){
+  .testimonial-proof{height:320px}
+}

@@ -33,7 +33,7 @@
     el.addEventListener('click', event => {
       if (el.getAttribute('href') === '#') {
         event.preventDefault();
-        alert('Ganti whatsappNumber di file data.js dengan nomor WhatsApp admin. Gunakan format 628xxxxxxxxxx.');
+        alert('Isi whatsapp_number pada tab Pengaturan. Gunakan format 628xxxxxxxxxx.');
       }
     });
   });
@@ -123,10 +123,38 @@
   modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
 
   const testimonialsGrid = $('#testimonialsGrid');
+
+  if (!cfg.testimonials.length) {
+    testimonialsGrid.innerHTML = `
+      <div class="testimonial-empty reveal">
+        <b>Testimoni belum terbaca.</b>
+        <span>Pastikan kolom Tampilkan berisi YA dan link Apps Script CMS sudah benar.</span>
+      </div>`;
+  }
+
   cfg.testimonials.forEach(review => {
     const card = document.createElement('article');
-    card.className = 'testimonial-card reveal';
-    card.innerHTML = `<div class="quote-mark">“</div><div class="stars" aria-label="${review.rating} dari 5 bintang">${'★'.repeat(review.rating)}${'☆'.repeat(5-review.rating)}</div><blockquote>${review.text}</blockquote><div class="reviewer"><div><b>${review.name}</b><small>${review.role}</small></div>${review.demo ? '<span class="review-demo">Contoh</span>' : ''}</div>`;
+    card.className = `testimonial-card reveal${review.image ? ' has-proof' : ''}`;
+
+    const proof = review.image
+      ? `<a class="testimonial-proof" href="${review.image}" target="_blank" rel="noopener noreferrer" aria-label="Buka screenshot testimoni ${review.name}">
+          <img src="${review.image}" alt="Screenshot testimoni ${review.name}" loading="lazy">
+          <span>Buka bukti testimoni ↗</span>
+        </a>`
+      : '';
+
+    card.innerHTML = `
+      ${proof}
+      <div class="testimonial-copy">
+        <div class="quote-mark">“</div>
+        <div class="stars" aria-label="${review.rating} dari 5 bintang">${'★'.repeat(review.rating)}${'☆'.repeat(5-review.rating)}</div>
+        <blockquote>${review.text}</blockquote>
+        <div class="reviewer">
+          <div><b>${review.name}</b><small>${review.role}</small></div>
+          ${review.demo ? '<span class="review-demo">Contoh</span>' : ''}
+        </div>
+      </div>`;
+
     testimonialsGrid.appendChild(card);
   });
 

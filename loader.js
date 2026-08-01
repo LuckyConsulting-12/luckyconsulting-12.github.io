@@ -11,12 +11,12 @@
   }
 
   function startWebsite() {
-    addScript("script.js");
+    addScript("script.js?v=20260802-3");
   }
 
   function loadFallback() {
     console.warn("Google Sheets tidak dapat dimuat. Memakai data.js sementara.");
-    addScript("data.js", startWebsite, startWebsite);
+    addScript("data.js?v=20260802-3", startWebsite, startWebsite);
   }
 
   if (

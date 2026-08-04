@@ -61,7 +61,7 @@ window.LUCKY_CONFIG = {
       title: "PPT Presentasi",
       category: "Presentasi",
       image: "portfolio-ppt.svg",
-      description: "Contoh tampilan portfolio. Ganti gambar ini dengan screenshot PPT terbaik yang sudah disamarkan.",
+      description: "Kami menyediakan berbagai jenis Template Power Point yang dapat digunakan untuk keperluan.",
       tags: ["PPT", "Canva", "Presentasi"],
       demo: true
     },
@@ -69,7 +69,7 @@ window.LUCKY_CONFIG = {
       title: "Formatting Dokumen",
       category: "Microsoft Word",
       image: "portfolio-word.svg",
-      description: "Contoh tampilan portfolio. Ganti dengan before–after dokumen yang tidak menampilkan identitas client.",
+      description: "Formatting dokumen termasuk penomoran halaman, before-after, line spacing dan keteraturan paragraf.",
       tags: ["Word", "Formatting", "Layout"],
       demo: true
     },
@@ -77,7 +77,7 @@ window.LUCKY_CONFIG = {
       title: "Olah Data SPSS",
       category: "Analisis Data",
       image: "portfolio-spss.svg",
-      description: "Contoh tampilan portfolio. Ganti dengan tabel atau output yang telah disamarkan dan diizinkan untuk ditampilkan.",
+      description: "Kami membuka jasa pengolahan Data SPSS sesuai dengan kebutuhan client.",
       tags: ["SPSS", "Statistik", "Interpretasi"],
       demo: true
     }
@@ -85,8 +85,8 @@ window.LUCKY_CONFIG = {
 
   testimonials: [
     {
-      text: "Masukkan testimoni asli pelanggan di sini. Hapus tanda demo setelah teks dan identitasnya sudah sesuai.",
-      name: "Inisial Client",
+      text: "Basus banget kaaa",
+      name: "A",
       role: "Jenis layanan",
       rating: 5,
     },
